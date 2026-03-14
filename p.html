@@ -122,8 +122,8 @@
         
         const ref = urlParams.get('ref');
         
-        // Build deep link
-        let deepLink = `windowshopper://product/${productId}`;
+        // Build deep link using the same scheme as store but with product path
+        let deepLink = `windowshopper://store/product/${productId}`;
         if (ref) {
             deepLink += `?ref=${ref}`;
         }
